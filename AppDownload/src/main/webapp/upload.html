@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>File Upload Area</title>
+</head>
+<body>
+<h3>File Upload Page</h3>
+	<form action="UploadServlet" method="post"
+		enctype="multipart/form-data">
+		Upload File : <input type="file" name="file" style="margin-left: 4em;"/><br><br>
+		File Name : <input type="text" name="fileName" style="margin-left: 4.5em;"/><br><br>
+		File Version : <input type="number" name="fileVersion" style="margin-left: 3.8em;"/><br><br>
+		File Type : <select name = apps style="margin-left: 5em; padding-right: 5em;">
+						<option value="apk">APK</option>
+						<option value="ipa">IPA</option>
+					</select><br><br><br>
+		<input type="submit" value="Upload File" />
+	</form>
+	<br><br><form action="VersionServlet" method="get">
+	<input type="submit" value="Refersh">
+	</form>
+</body>
+</html>
